@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700');
+
+body {
+	background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../images/jogging.jpg) no-repeat center center fixed;
+	background-size: cover;
+	color: #fff;
+	font-family: 'Crimson Text', serif;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 5vw;
+	margin-top: .8em;
+}
+
+.lap {
+	text-align: right;
+	font-size: 3vw;
+}
+
+.timer {
+	text-align: center;
+	font-size: 7vw;
+}
+
+#controls {
+	text-align: center;
+}
+
+/*
+.controls #control1 {
+	margin-right: 2em;
+}
+*/
+
+.controls {
+	display: inline-block;
+	background-color: coral;
+/*	padding: 1em 1.2em;*/
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: all .5s ease-in;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+#control3, #control4, #control5 {
+	display: none;
+}
+
+.controls:hover {
+	background-color: rgba(255, 255, 255, .88);
+	border-color: coral;
+	color: coral;
+} 
+
+.log-display {
+	margin-top: 2em;
+	overflow-y: scroll;
+	height: 150px;
+	padding: 0 1.5em;
+	/*display: none;*/
+}
+
+#logCount {
+	border-bottom: 2px solid #fff;
+	font-size: 1.5em;
+}
+
+#logCount .log-num {
+	float: left;
+}
+
+#logCount .logTimer {
+	float: right;
+}
